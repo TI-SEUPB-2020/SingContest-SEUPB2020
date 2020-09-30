@@ -107,7 +107,8 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body">
-          <img id='modalImage' src="" width=100%></img>
+          //  Video embed
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/q1HW6DdBCKw?start=251" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="modal-body">
         	<h4 style="color: black;" class="modal-title" id="title"></h4>
