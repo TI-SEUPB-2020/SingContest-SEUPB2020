@@ -44,12 +44,12 @@
             }
           }
       });
-    var currentImg = 0;
+    var currenVideo = 0;
     function imageClick(index) {
-      currentImg = index;
-      console.log(currentImg);
-      $("#modalImage").attr("src", table[currentImg - 1].url);
-      $("#title").html(table[currentImg - 1].title);
+      currenVideo = index;
+      console.log(currenVideo);
+      $("#modalImage").attr("src", table[currenVideo - 1].url);
+      $("#title").html(table[currenVideo - 1].title);
     }
 
     function vote() {
@@ -87,7 +87,7 @@
           break;
 
       }
-      location.replace("final.php?imageId=" + prefix + currentImg);
+      location.replace("final.php?imageId=" + prefix + currenVideo);
     }
 
   </script>
@@ -107,7 +107,7 @@
       <div class="modal-content">
         <div class="modal-body">
           //  Video embed
-          <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe id="modalImage" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="modal-body">
         	<h4 style="color: black;" class="modal-title" id="title"></h4>
