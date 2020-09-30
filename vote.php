@@ -31,7 +31,7 @@
   <script>
     var table;
     $.ajax({
-          url: 'images.php?id_school=' + $("#school").text(),
+          url: 'videos.php?id_school=' + $("#school").text(),
           type: 'get',
           dataType: 'JSON',
           success: function(response){
@@ -39,8 +39,8 @@
             table = response;
             for(var i = 0; i < response.length; i++) {
               var index = i + 1;
-              var url = "images/" + table[i].location + "/" + index + "-min.jpg";
-              $("#images").append("<img onclick='imageClick(" + index + ")' data-toggle='modal' data-target='#myModal' src='" + url + "' style='width: 33.33%;'/>");
+              var url = "videos/" + table[i].location + "/" + index + "-min.jpg";
+              $("#videos").append("<img onclick='imageClick(" + index + ")' data-toggle='modal' data-target='#myModal' src='" + url + "' style='width: 33.33%;'/>");
             }
           }
       });
@@ -48,9 +48,8 @@
     function imageClick(index) {
       currentImg = index;
       console.log(currentImg);
-      $("#modalImage").attr("src", "images/" + table[currentImg - 1].location + "/" + currentImg + ".jpg");
+      $("#modalImage").attr("src", table[currentImg - 1].url);
       $("#title").html(table[currentImg - 1].title);
-      $("#description").html(table[currentImg - 1].description);
     }
 
     function vote() {
@@ -99,7 +98,7 @@
   </div>
 
   <div class="container" style="height: 100%; width: 80%;">
-    <div class="row" id="images">
+    <div class="row" id="videos">
     </div>
   </div>
 <div class="container">
@@ -108,11 +107,10 @@
       <div class="modal-content">
         <div class="modal-body">
           //  Video embed
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/q1HW6DdBCKw?start=251" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="modal-body">
         	<h4 style="color: black;" class="modal-title" id="title"></h4>
-          	<p style="color: black;" id="description"></p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>

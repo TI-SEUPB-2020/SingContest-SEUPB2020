@@ -1,16 +1,15 @@
 <?php
 	include 'db_connection.php';
 	$idSchool = $_GET['id_school'];
-	$consult = "select id_image, title, description, location from images where id_school = '$idSchool'";
+	$consult = "select id_video, title, url from videos where id_video = '$id_video'";
 	$result = mysqli_query($db_connection, $consult);
 	$rows = array();
 	$counter = 0;
 	echo '[';
 	while($row = mysqli_fetch_assoc($result)) {
-		echo '{"id_image": "'.$row['id_image'].'",';
+		echo '{"id_video": "'.$row['id_video'].'",';
 		echo '"title": "'.utf8_encode($row['title']).'",';
-		echo '"description": "'.utf8_encode($row['description']).'",';
-		echo '"location": "'.$row['location'].'"';
+		echo '"url": "'.$row['url'].'"';
 		++$counter;
 		if ($counter == mysqli_num_rows($result)) {
 			echo "}";
