@@ -39,7 +39,7 @@
             table = response;
             for(var i = 0; i < response.length; i++) {
               var index = i + 1;
-              var url = "videos/" + table[i].location + "/" + index + "-min.jpg";
+              var url = "videos/" + table[i].id_video + "/" + index + "-min.jpg";
               $("#videos").append("<img onclick='imageClick(" + index + ")' data-toggle='modal' data-target='#myModal' src='" + url + "' style='width: 33.33%;'/>");
             }
           }
