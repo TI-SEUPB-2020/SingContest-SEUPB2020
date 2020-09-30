@@ -1,7 +1,7 @@
 <?php
 	include 'db_connection.php';
 	$idSchool = $_GET['id_school'];
-	$consult = "select id_video, title, url from videos where id_video = '$id_video'";
+	$consult = "select id_video, title, url from videos where id_school = '$idSchool'";
 	$result = mysqli_query($db_connection, $consult);
 	$rows = array();
 	$counter = 0;
