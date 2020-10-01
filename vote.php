@@ -49,7 +49,7 @@
             for(var i = 0; i < response.length; i++) {
               var index = i + 1;
               var url = "/videos/" + table[i].id_video + ".jpg";
-              $("#videos").append(table[i].id_video);
+              $("#videos").append(url);
               
             }
           }
