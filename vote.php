@@ -115,7 +115,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body">
-          <iframe id="modalImage" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe id="modalImage" width="600" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="modal-body">
         	<h4 style="color: black;" class="modal-title" id="title"></h4>
