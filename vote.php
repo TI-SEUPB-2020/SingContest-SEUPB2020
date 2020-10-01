@@ -62,7 +62,7 @@
             table = response;
             for(var i = 0; i < response.length; i++) {
               var index = i + 1;
-              var url = "https://img.youtube.com/vi/" + table[i].url + "/default.jpg";
+              var url = "https://img.youtube.com/vi/" + table[i].url + "/0.jpg";
               $("#videos").append("<img onclick='imageClick(" + index + ")' data-toggle='modal' data-target='#myModal' src='" + url + "' style='width: 33%;'/>");
             }
           }
@@ -71,7 +71,7 @@
     function imageClick(index) {
       currenVideo = index;
       console.log(currenVideo);
-      $("#modalImage").attr("src", table[currenVideo - 1].url);
+      $("#modalImage").attr("src", "https://www.youtube.com/embed/" + table[currenVideo - 1].url);
       $("#title").html(table[currenVideo - 1].title);
     }
 
