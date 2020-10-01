@@ -97,7 +97,7 @@
     }
 
   </script>
-  <div class="header" style="background-color:black; opacity: 0.5;">
+  <div id="container" style="background-color:black; opacity: 0.5;">
     <br><br>
      <img src="res/votetitle.png" style="width:60%;" class="center"><br><br>
      <img src="res/votedescription.png" style="width:60%;" class="center"><br><br>
