@@ -25,6 +25,12 @@
       background-attachment: fixed;
       background-size: cover;
     }
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
   </style>
 </head>
 <body>
@@ -93,8 +99,8 @@
   </script>
   <div class="header">
     <br><br>
-     <img src="res/votetitle.png" style="width:60%;"><br><br>
-     <img src="res/votedescription.png" style="width:60%;"><br><br>
+     <img src="res/votetitle.png" style="width:60%;" class="center"><br><br>
+     <img src="res/votedescription.png" style="width:60%;" class="center"><br><br>
   </div>
 
   <div class="container" style="height: 100%; width: 80%;">
