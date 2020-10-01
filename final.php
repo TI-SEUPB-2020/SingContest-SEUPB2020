@@ -37,8 +37,8 @@ body {
       $consult = mysqli_query($db_connection, $query);
       $result = mysqli_num_rows($consult);
       if ($result == 1) {
-        $query1 = mysqli_query($db_connection, "UPDATE images set votes=votes+1 where id_image='".$idVideo."';");
-        $query2 = mysqli_query($db_connection, "INSERT INTO votes (id_user, id_image, id_school, date) VALUES ('".$idCode."', '".$idVideo."', '".$idSchool."', NOW( ));");
+        $query1 = mysqli_query($db_connection, "UPDATE videos set votes=votes+1 where id_video='".$idVideo."';");
+        $query2 = mysqli_query($db_connection, "INSERT INTO votes (id_user, id_video, id_school, date) VALUES ('".$idCode."', '".$idVideo."', '".$idSchool."', NOW( ));");
         $query3 = mysqli_query($db_connection, "UPDATE registered_students set voted=1 where code=".$idCode.";");
       }
     }
