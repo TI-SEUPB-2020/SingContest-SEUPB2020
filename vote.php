@@ -62,7 +62,7 @@
             table = response;
             for(var i = 0; i < response.length; i++) {
               var index = i + 1;
-              var url = "videos/" + table[i].id_video + ".jpg";
+              var url = "https://img.youtube.com/vi/" + table[i].url + "/default.jpg""videos/";
               $("#videos").append("<img onclick='imageClick(" + index + ")' data-toggle='modal' data-target='#myModal' src='" + url + "' style='width: 33%;'/>");
             }
           }
