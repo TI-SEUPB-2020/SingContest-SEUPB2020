@@ -34,6 +34,20 @@
     #container {
       position:relative;
     }
+    .video-responsive {
+      height: 0;
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      position: relative;
+    }
+    .video-responsive iframe, .video-responsive object, .video-responsive embed {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
   </style>
 </head>
 <body>
@@ -115,7 +129,9 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body">
-          <iframe id="modalImage" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="video-responsive">
+            <iframe id="modalImage" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
         <div class="modal-body">
         	<h4 style="color: black;" class="modal-title" id="title"></h4>
@@ -145,3 +161,4 @@
 </div>
 </body>
 </html>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2wXhE0zn66g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
