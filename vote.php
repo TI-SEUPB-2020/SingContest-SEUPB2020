@@ -18,7 +18,7 @@
   <style>
     body{
       color: white;
-      background-image: linear-gradient(to bottom, rgba(153, 50, 204,2), rgba(0,0,0,1));
+      background-image: url('res/wallpaper.jpg');
       background-attachment: fixed
       background-position: center center;
       background-repeat: no-repeat;
