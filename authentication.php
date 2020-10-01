@@ -88,7 +88,7 @@ if (!empty($_POST['idCode']) && !empty($_POST['ci'])) {
 	    	<img src="res/logo.png" class="center">
 	    </div>
 	    <div class="container">
-	    	<img src="res/titulo.png" class="center" style="margin-bottom: 10%;">
+	    	<img src="res/title.png" class="center" style="margin-bottom: 10%;">
 	    </div>
 	    <div class="container center_div">
 		    <form action="authentication.php" method="post">

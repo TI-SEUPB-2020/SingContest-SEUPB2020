@@ -93,8 +93,8 @@
   </script>
   <div class="header">
     <br><br>
-     <img src="res/votetitle.png" style="width:100%;"><br><br>
-     <img src="res/votedescription.png" style="width:100%;"><br><br>
+     <img src="res/votetitle.png" style="width:60%;"><br><br>
+     <img src="res/votedescription.png" style="width:60%;"><br><br>
   </div>
 
   <div class="container" style="height: 100%; width: 80%;">
