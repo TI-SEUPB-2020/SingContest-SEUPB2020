@@ -96,7 +96,7 @@
           break;
 
       }
-      location.replace("final.php?imageId=" + prefix + currenVideo);
+      location.replace("final.php?videoId=" + prefix + currenVideo);
     }
 
   </script>
@@ -115,7 +115,6 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body">
-          //  Video embed
           <iframe id="modalImage" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="modal-body">
@@ -123,7 +122,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-default" data-toggle='modal' data-target='#warning'>Votar por esta forografía</button>
+          <button type="button" class="btn btn-default" data-toggle='modal' data-target='#warning'>Votar por este video</button>
         </div>
       </div>
     </div>
@@ -133,7 +132,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body" style="color: black;">
-        	¿Estás seguro de que quieres votar por esta forografía?
+        	¿Estás seguro de que quieres votar por este video?
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" onclick="vote()">Sí</button>
