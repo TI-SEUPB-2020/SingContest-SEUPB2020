@@ -49,7 +49,8 @@
             for(var i = 0; i < response.length; i++) {
               var index = i + 1;
               var url = "/videos/" + table[i].id_video + ".jpg";
-              $("#videos").append("<img onclick='imageClick(" + index + ")' data-toggle='modal' data-target='#myModal' src='" + url + "' style='width: 33%;'/>");
+              $("#videos").append(table[i].id_video);
+              
             }
           }
       });
