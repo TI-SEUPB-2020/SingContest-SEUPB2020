@@ -56,7 +56,7 @@
             for(var i = 0; i < response.length; i++) {
               var index = i + 1;
               var url = "https://www.youtube.com/embed/" + table[i].url;
-              $("#videos").append(url);
+              $("#videos").append("<iframe width='560' height='315' src='" + url + "' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>");
             }
           }
       });
