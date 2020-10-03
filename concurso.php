@@ -61,13 +61,7 @@
           }
       });
   </script>
-  <div id="container" style="background-color:black;">
-    <br><br>
-     <img src="res/votetitle.png" style="width:60%; position:relative;" class="center"><br><br>
-     <img src="res/votedescription.png" style="width:60%; position:relative;" class="center"><br><br>
-  </div>
-
-  <div class="container" style="height: 100%; width: 80%;">
+  <div class="container" style="height: 100%; width: 100%;">
     <div class="row" id="videos">
     </div>
   </div>
